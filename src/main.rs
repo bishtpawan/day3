@@ -1,0 +1,12 @@
+fn main() {
+  let s1 = String::from("hello");
+  let (s2, len) = get_length(s1);
+  println!("The length of {} is {}",s2 ,len);
+
+}
+
+fn get_length(s:String)->(String,usize){
+  let length = s.len();
+  (s,length)
+
+}
